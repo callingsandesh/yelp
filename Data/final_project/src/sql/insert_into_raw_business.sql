@@ -1,0 +1,1 @@
+INSERT INTO raw_business VALUES %s

@@ -1,0 +1,1 @@
+INSERT INTO raw_tips VALUES %s
