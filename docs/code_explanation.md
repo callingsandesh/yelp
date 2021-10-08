@@ -1019,6 +1019,7 @@ SELECT user_id from raw_user ru
 |19,891,956|
 
 `select SUM(friends_count)as total_distinct_friends from fact_user`
+
 |total_distinct_friends|
 |116,040,973|
 
