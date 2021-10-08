@@ -1021,7 +1021,10 @@ SELECT user_id from raw_user ru
 `select SUM(friends_count)as total_distinct_friends from fact_user`
 
 |total_distinct_friends|
+|----------------------|
 |116,040,973|
+
+
 
 
 4. Checking if the yelping_since is not in the future
