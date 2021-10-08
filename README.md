@@ -18,6 +18,8 @@ src/
       *.py
     helper.py
     utils.py
+    sql/                                  # Folder containing sql query
+     *.sql
 ```
 
 Dataset LINK: https://www.yelp.com/dataset 
