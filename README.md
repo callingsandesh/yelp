@@ -5,12 +5,12 @@
 
 ```
  docs/                                  # Folder containing documentation files.      
-    Dashboard and Report.pdf
-    Proposal YELP business data.doc         #can view only by downloading
-    Proposal YELP business data.pdf         #can view on github
-    YELP-documentation.docx                 #can veiw only by downloading  
-    YELP-documentation.pdf                  #can view on github
-    code_explanation.md
+    Dashboard and Report.pdf                #dashboard and repoting of the BUSINESS
+    Proposal YELP business data.doc         #Proposal of the project on .doc format
+    Proposal YELP business data.pdf         #Proposal of project on .pdf format
+    YELP-documentation.docx                 #documentation of project on .docx format 
+    YELP-documentation.pdf                  #documentation of project on .pdf format
+    code_explanation.md                     #explanation of all the codes of the project 
 schema/                                 # Folder containing sql query.
     *.sql    
 src/
