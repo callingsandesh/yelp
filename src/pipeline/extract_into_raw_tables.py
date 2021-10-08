@@ -47,12 +47,12 @@ if __name__=='__main__':
     batch_size=10000
 
     file_paths_and_query_path ={
-                #'user':['../../datasets/yelp_dataset/yelp_academic_dataset_user.json','../sql/insert_into_raw_user.sql'],
+                'user':['../../datasets/yelp_dataset/yelp_academic_dataset_user.json','../sql/insert_into_raw_user.sql'],
                 'business':['../../datasets/yelp_dataset/yelp_academic_dataset_business.json','../sql/insert_into_raw_business.sql'],
-                #'photos':['../../datasets/yelp_dataset/photos.json','../sql/insert_into_raw_photo.sql'],
-                # 'tip':['../../datasets/yelp_dataset/yelp_academic_dataset_tip.json','../sql/insert_into_raw_tip.sql'],
-                # 'review':['../../datasets/yelp_dataset/yelp_academic_dataset_review.json','../sql/insert_into_raw_review.sql'],
-                # 'checkin':['../../datasets/yelp_dataset/yelp_academic_dataset_checkin.json','../sql/insert_into_raw_checkin.sql']
+                'photos':['../../datasets/yelp_dataset/photos.json','../sql/insert_into_raw_photo.sql'],
+                'tip':['../../datasets/yelp_dataset/yelp_academic_dataset_tip.json','../sql/insert_into_raw_tip.sql'],
+                'review':['../../datasets/yelp_dataset/yelp_academic_dataset_review.json','../sql/insert_into_raw_review.sql'],
+                'checkin':['../../datasets/yelp_dataset/yelp_academic_dataset_checkin.json','../sql/insert_into_raw_checkin.sql']
                 }
     
     for paths in file_paths_and_query_path.values():
