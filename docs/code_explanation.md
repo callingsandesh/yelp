@@ -1008,11 +1008,11 @@ SELECT COUNT(*) as total_impacted_count  from cte_r where total_impacted_rows>1
 
 3. Checking if all the friends are not the user
 ```
-select COUNT(*)as total_friend_not_user from (
-select distinct(unnest(string_to_array(friends, ','))) as friend from raw_user ru
-except 
-select user_id from raw_user ru
-)
+SELECT COUNT(*)as total_friend_not_user FROM (
+SELECT DISTINCT(unnest(string_to_array(friends, ','))) AS friend from raw_user ru
+EXCEPT 
+SELECT user_id from raw_user ru
+)F
 ```
 
 4. Checking if the yelping_since is not in the future
@@ -1032,12 +1032,12 @@ WHERE yelping_since > now()
 
 5. Checking if the average_stars  is not in between 0 and 5
 ```
-select count(*) as total_impacted_count,
-	case when COUNT(*)> 0 then 'failed'
-	   else 'passed'
-	   end as label
-from fact_user fu 
-where average_stars  < 0 and average_stars >5
+SELECT count(*) AS total_impacted_count,
+	case WHEN COUNT(*)> 0 then 'failed'
+	   ELSE 'passed'
+	   END as label
+FROM fact_user fu 
+WHERE average_stars  < 0 and average_stars >5
 ```
 |total_impacted_count|label|
 |--------------------|-----|
